@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-canvas: #0b0c10;
+  --color-bg-surface: #12141a;
+  --color-bg-elevated: #181b22;
+  --color-fg-primary: #f3f4f6;
+  --color-fg-muted: #9ca3af;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-accent-primary: #3b82f6;
+}
+

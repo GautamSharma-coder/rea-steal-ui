@@ -1,0 +1,86 @@
+/* Synthetic Stylesheet Fixture with Mixed Ad-Hoc Colors and CSS Variables */
+
+:root {
+  --bg-primary: #0a0b0e;
+  --bg-secondary: #12141a;
+  --text-main: #f3f4f6;
+  --brand-blue: #3b82f6;
+  --brand-blue-hover: #2563eb;
+  --border-dim: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: #0a0b0e;
+  color: #f3f4f6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Card Surface with clustered near-identical dark tones */
+.card-surface {
+  background: #12141a;
+  border: 1px solid #1f232b;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.card-elevated {
+  background: #181b22;
+  border: 1px solid #282d37;
+  border-radius: 12px;
+}
+
+/* Button variants with ad-hoc hex and rgb definitions */
+.btn-primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+}
+
+/* Modal Dialog */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  background: #16181f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Micro-interaction Keyframes */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-popover {
+  animation: fadeInScale 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

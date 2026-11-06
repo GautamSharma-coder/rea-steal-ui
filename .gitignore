@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Production build outputs
+dist
+build
+*.tsbuildinfo
+
+# Test and Coverage
+coverage
+.nyc_output
+
+# Temporary & debug files
+.tmp
+.rea-debug
+scratch
+*-ui-kit/
+tmp-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs & Editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.swp
+*.swo
+
+# Environment & local secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
